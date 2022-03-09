@@ -1,11 +1,12 @@
-from bs4 import BeautifulSoup
+from experimentals_scraper import ExperimentalsScraper
 
 
 def main():
-    pass
+    scraper: ExperimentalsScraper = ExperimentalsScraper(
+        url="https://inara.cz/experimentaleffects/"
+    )
+    print(scraper.experimentalsJson)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
-
-class ExperimentalsScraper:
-    pass
